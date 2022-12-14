@@ -1,8 +1,10 @@
 import { reactive } from "vue";
 import axios from "axios";
 export const store = reactive({
-    movies: [],
-    series: [],
+    movies: [
+    ],
+    series: [
+    ],
     filter: null,
 });
 
@@ -31,5 +33,4 @@ export function fetchMovie() {
             console.log("serie: ", resp.data.results);
             store.series = resp.data.results;
         });
-
 }
