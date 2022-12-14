@@ -40,7 +40,7 @@ export default {
 <template>
     <div class="card position-relative">
         <img class="image" :src="getPosterImage(movie.poster_path)" alt="">
-        <div class="card2">
+        <div class="card-hover">
             <div>title: {{ movie.title }}</div>
             <div v-if="movie.name"> original title: {{ movie.name }}</div>
             <div v-else> original title: {{ movie.original_title }}</div>
@@ -68,7 +68,7 @@ export default {
 
 }
 
-.card2 {
+.card-hover {
     position: absolute;
     top: 100px;
     color: white;
