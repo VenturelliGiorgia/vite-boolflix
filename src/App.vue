@@ -20,12 +20,18 @@ export default {
 </script>
 
 <template>
-  <theHeader @search="onSearch"></theHeader>
-  <main>
-    <theMain></theMain>
-  </main>
+
+  <body>
+    <theHeader @search="onSearch"></theHeader>
+    <main>
+      <theMain></theMain>
+    </main>
+  </body>
 </template>
 
 <style scoped>
-
+body {
+  background-color: rgb(27 27 27);
+  padding-bottom: 3rem;
+}
 </style>

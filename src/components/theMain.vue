@@ -18,13 +18,13 @@ export default {
 <template>
     <main>
         <div class="container">
-            <div class="row g-3">
-                <h2>film</h2>
-                <div class="col-4" v-for="movie in store.movies">
+            <div class="row g-1">
+                <h2>FILM</h2>
+                <div class="col-3" v-for="movie in store.movies">
                     <card :movie="movie"></card>
                 </div>
-                <h2>Serie</h2>
-                <div class="col-4" v-for="movie in store.series">
+                <h2 class="mt-2">SERIE</h2>
+                <div class="col-3" v-for="movie in store.series">
                     <card :movie="movie"></card>
                 </div>
             </div>
@@ -33,5 +33,7 @@ export default {
 </template>
 
 <style scoped>
-
+h2 {
+    color: white;
+}
 </style>
